@@ -19,6 +19,8 @@ def main(big_query_client=client):
         uri, table_id, job_config=job_config
     )
 
+    
+
     load_job.result()
 
     destination_table = big_query_client.get_table(table_id)
